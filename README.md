@@ -36,11 +36,17 @@ After fabric is up and running install the chaincode following the commands from
 To give permission use - sudo chmod -R 777 /path/,,
 
 For the frontend :
+
 run -> minifab apprun -l node
+
 run -> npm install express 
+
 download the folder Frontend.zip
+
 paste and replace the files in the vars/app/node folder
+
 open the terminal in the app/node folder and run -> sudo node server.js
+
 Go to the local address to interact with chain code
 
 
