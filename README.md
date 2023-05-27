@@ -1,21 +1,59 @@
-# Minor-Major-Project_AyushMohanDas_AMENp2CSN21006
+# Implementable Smaert FIR System via Minifabric Network
 
-This Project is based on Hyperledger minifabric network.
+This Project is based on Hyperledger minifabric network.It is based on an idea to develop a smart FIR system for the counrty based on block chain.The idea is to show how blockchain can be beneficial to the heirarchial structure of our policing system. It has 2 chaicode *(fir and fir2)* that I have added, with 2 oraganizations having 2 peers each runnig on default consesnsus on a netwok *(policenet)* with single channel *(policechannel)* .
 
-It is based on an idea to develop a smart FIR system for the counrty based on block chain.
+To run this project Ubuntu Jammy 22.04 LTS version was used.
 
-The is a to show how blockchain can be beneficial to the heirarchial structure of our policing system.
+## __Let us understand the architecture via some diagrams:__
+
+__A)__
+
+__B)__
+
+__C)__
 
 
 
+## __*WORKING:-*__
+
+1) Install the following dependencies on your system with these command: 
+   
+   
+   
+...
 
 
-**WORKING:**-
+sudo apt update
 
-First You need to have a Ubuntu(Linux) system with the following :
+sudo apt install docker.io
 
-Docker , Docker compose. Java , Node , Npm , Python , Go , installed as dependencies.
+sudo systemctl start docker
 
+sudo systemctl enable docker
+
+sudo apt install docker-compose
+
+sudo apt install nodejs npm
+
+sudo apt install openjdk-11-jdk
+
+sudo apt install python3
+
+sudo apt install golang
+
+npm install express
+
+...
+
+Also for docker you need to register your user wth docker and set it to starton each bootup 
+
+2) Minifabric
+
+  Install minifabric in a folder of your choice:
+  
+...
+
+...
 Then follow the link- https://github.com/litong01/minifabric to understand minifabric 
 
 To set up the network - follow the docs- https://github.com/litong01/minifabric/blob/main/docs/README.md
