@@ -1,0 +1,63 @@
+Important commands I need For the fabric project:
+
+
+
+Docker:
+
+docker rm $(docker stop $(docker ps -aq))
+
+
+docker container stop $(docker container ls -aq)
+
+docker ps
+
+docker images
+
+docker ls
+
+
+
+Minifab:
+
+install chain code simple based on node js.
+
+minifab ccup -n simple -l node -v 1.0
+
+minifab ccup -n fir -l node -v 1.0
+
+UBUNTU:
+
+sudo chmod -R 777 /home/amd/Documents/GIT/Fabric_Major/Tong_Li_minifab/Police/Network
+
+
+Chain code commands:
+
+FIR
+
+minifab invoke -n fir -p '"init","FIR_ID","John Doe","Stolen Property","New York","Open"'
+
+minifab invoke -n fir -p '"create","FIR_ID2","Jane Doe","Lost Property","Los Angeles","Open"'
+
+minifab invoke -n fir -p '"update","FIR_ID2","Jane Doe","Lost Property","Los Angeles","Closed"'
+
+minifab invoke -n fir -p '"delete","FIR_ID2"'
+
+minifab invoke -n fir -p '"query","FIR_ID2"'
+
+FIR 2 
+
+inifab invoke -n fir2 -p '"create", "FIR_1234", "Tom Cruise", "Lost my car", "Illinois", "Chicago", "Ajax", "Open","1
+234567890"'
+
+Caliper :
+
+minifab install,approve,commit,initialize -n samplecc -p ''
+minifab caliperrun
+
+
+Console:
+
+   minifab up -e true
+   minifab consoleup
+
+
