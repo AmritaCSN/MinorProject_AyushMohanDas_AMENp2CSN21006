@@ -54,4 +54,4 @@ open the terminal in the app/node folder and    run -> sudo node server.js
 Go to the local address to interact with chain code
 
 
-
+You can use the (Important commands file ) to understand the intercation with chaincod.
