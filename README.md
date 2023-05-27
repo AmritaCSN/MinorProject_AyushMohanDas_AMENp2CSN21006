@@ -21,7 +21,7 @@ __C) Frontend Communication with the Blockchain__
 
 ## __*WORKING:-*__
 
-1) Install the following dependencies on your system with these command: 
+__1) Install the following dependencies on your system with these command:__ 
    
 ```
 sudo apt update
@@ -47,7 +47,7 @@ npm install express
 
    Also for docker you need to register your user with docker and set docker to start on each bootup. 
 
-2) Minifabric
+__2) Minifabric__
 
   Install minifabric in a folder of your choice:
   Follow the [docs](https://github.com/litong01/minifabric/blob/main/docs/README.md) to choose the fabric of your choice.
@@ -59,7 +59,7 @@ mkdir minifab_dir
 
 cd minifab_dir
 ```
-3) Setting up the network and adding the chain codes.
+__3) Setting up the network and adding the chain codes.__
    
    
    
@@ -84,46 +84,43 @@ cd minifab_dir
          
       The files fir.js and package are in the zip extract according to the above architecture.
       
-      To insatll and interact with the chaincode follow the commands in file *(Important commands.txt)*
+      To insatll and interact with the chaincode follow the commands in file *(Important commands.txt)* , same for fir2 chaincode.
    
-  
+   __4) Frontend :__
+   
+   Run the following command in you main folder where you have spec.yaml file.
+   
+   ```
+   minifab apprun -l node
+   
+   ```
+   This will setup node endpoints for front end server.
+   
+   Follow the folder structure below:
+   
+   * minifab_dir(your folder) download and paste the spec.yaml and startnetwork.sh file here
+      * vars
+         * chaincode
+            * (chaincode) name-eg(fir)
+               * node
+                  * fir.js
+                  * package.json
+         * app
+            * node ( unzip and replace the files in this folder with that in Frontend.zip)
+               * main.js
+               * connection.js
+               * server.js
+               * index.html
+         * profiles
 
-Then follow the link- https://github.com/litong01/minifabric to understand minifabric 
+     In the folder *app/node* run
+     ```
+     sudo node server.js
+     ```
+     This will load the html page to interact with the chaincode on port 3000
+   
 
-To set up the network - follow the docs- https://github.com/litong01/minifabric/blob/main/docs/README.md
+## Acknowledgments
 
-Afte you have successfully installed the minifabric and understood the working now.
-
-Make a directory with any name on your system
-
-Download adn Run the following files in the folder:
-
--spec.yaml
-
--startnetwork.sh
-
--fir.zip
-
-Run -> ./startnetwork.sh 
-
-Understand the folder structure by following the docs.
-After fabric is up and running install the chaincode following the commands from the dock
-
-To give permission use -> sudo chmod -R 777 /path/,,
-
-**For the frontend **:
-
-run -> minifab apprun -l node
-
-run -> npm install express   to install node express to interact with the middle layer.
-
-Now download the folder Frontend.zip
-
-paste and replace the files in the **vars/app/node** folder
-
-open the terminal in the app/node folder and    run -> sudo node server.js
-
-Go to the local address to interact with chain code
-
-
-You can use the (Important commands file ) to understand the intercation with chaincod.
+- Suggestions are welcome
+- Plesae contribute and kudos to blockchain
