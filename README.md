@@ -20,9 +20,7 @@ __C)__
    
    
    
-...
-
-
+```
 sudo apt update
 
 sudo apt install docker.io
@@ -42,8 +40,7 @@ sudo apt install python3
 sudo apt install golang
 
 npm install express
-
-...
+```
 
 Also for docker you need to register your user wth docker and set it to starton each bootup 
 
