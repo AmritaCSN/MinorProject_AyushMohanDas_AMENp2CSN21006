@@ -10,7 +10,7 @@ The is a to show how blockchain can be beneficial to the heirarchial structure o
 
 
 
-WORKING:-
+**WORKING:**-
 
 First You need to have a Ubuntu(Linux) system with the following :
 
@@ -24,28 +24,32 @@ Afte you have successfully installed the minifabric and understood the working n
 
 Make a directory with any name on your system
 
-Run download the following files in the folder:
+Download adn Run the following files in the folder:
+
 -spec.yaml
+
 -startnetwork.sh
+
 -fir.zip
 
-Run startnetwork.sh 
+Run -> ./startnetwork.sh 
+
 Understand the folder structure by following the docs.
 After fabric is up and running install the chaincode following the commands from the dock
 
-To give permission use - sudo chmod -R 777 /path/,,
+To give permission use -> sudo chmod -R 777 /path/,,
 
-For the frontend :
+**For the frontend **:
 
 run -> minifab apprun -l node
 
-run -> npm install express 
+run -> npm install express   to install node express to interact with the middle layer.
 
-download the folder Frontend.zip
+Now download the folder Frontend.zip
 
-paste and replace the files in the vars/app/node folder
+paste and replace the files in the **vars/app/node** folder
 
-open the terminal in the app/node folder and run -> sudo node server.js
+open the terminal in the app/node folder and    run -> sudo node server.js
 
 Go to the local address to interact with chain code
 
