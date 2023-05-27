@@ -82,9 +82,9 @@ __3) Setting up the network and adding the chain codes.__
                   * package.json
          * profiles
          
-      The files fir.js and package are in the zip extract according to the above architecture.
+      The files fir.js and package are in the *zip(fir.zip)*  extract according to the above architecture.
       
-      To insatll and interact with the chaincode follow the commands in file *(Important commands.txt)* , same for fir2 chaincode.
+      To install and interact with the chaincode follow the commands in file *(Important commands.txt)* , same for fir2 chaincode.
    
    __4) Frontend :__
    
